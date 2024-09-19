@@ -1,12 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: ["./**/*.html"],
   theme: {
     fontFamily: {
       sans: ['ui-sans-serif', 'system-ui'],
       serif: ['ui-serif', 'Georgia'],
       mono: ['ui-monospace', 'SFMono-regular'],
+      sansG: ['Graphik', 'sans-serif'],
+      serifM: ['Merriweather', 'serif'],
     },
+    
     extend: {
       animation: {
         "spin-slow": "spin 3s linear infinite",
@@ -21,6 +25,7 @@ module.exports = {
       transitionDuration: {
         2000: "2000ms",
       },
+      
     },
   },
   plugins: [],
