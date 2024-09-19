@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../dist/styles.css" />
+    <title>Interactivity</title>
+  </head>
+  <body>
+    <!-- Hover State Styling -->
+    <button
+      class="bg-black text-white py-3 px-5 rounded-lg m-3 hover:bg-orange-500 hover:text-black"
+    >
+      submit
+    </button>
+
+    <!-- Focus State Styling -->
+    <button
+      class="bg-black text-white py-3 px-5 rounded-lg m-3 focus:bg-orange-500 focus:text-black"
+    >
+      submit
+    </button>
+
+    <!-- Active State Styling -->
+    <button
+      class="bg-black text-white py-3 px-5 rounded-lg m-3 active:bg-orange-500 active:text-black"
+    >
+      submit
+    </button>
+
+    <!-- Styling based on parent state -->
+    <a
+      href="#large-text"
+      class="group block max-w-xs mx-auto rounded-lg p-6 bg-white shadow-lg space-y-3 hover:bg-sky-500"
+    >
+      <h3 class="group-hover:text-white">Card Title</h3>
+      <p class="group-hover:text-white">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos,
+        distinctio.
+      </p>
+    </a>
+
+    <!-- Pseudo Classes -->
+    <ul>
+      <li class="first:bg-red-200 even:bg-green-500 odd:bg-orange-500">
+        Item 1
+      </li>
+      <li class="first:bg-red-200 even:bg-green-500 odd:bg-orange-500">
+        Item 2
+      </li>
+      <li class="first:bg-red-200 even:bg-green-500 odd:bg-orange-500">
+        Item 3
+      </li>
+      <li class="first:bg-red-200 even:bg-green-500 odd:bg-orange-500">
+        Item 4
+      </li>
+      <li class="first:bg-red-200 even:bg-green-500 odd:bg-orange-500">
+        Item 5
+      </li>
+      <li class="first:bg-red-200 even:bg-green-500 odd:bg-orange-500">
+        Item 6
+      </li>
+    </ul>
+
+    <!-- Appearance -->
+    <!-- Use appearance-none to reset any browser specific styling on an element. This utility is often used when creating custom form components. -->
+    <select class="appearance-none">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+
+    <br /><br />
+    <!-- Cursor -->
+    <button
+      class="bg-black text-white py-3 px-5 rounded-lg m-3 active:bg-orange-500 active:text-black cursor-wait"
+    >
+      Submit
+    </button>
+    <button
+      class="bg-black text-white py-3 px-5 rounded-lg m-3 active:bg-orange-500 active:text-black cursor-not-allowed"
+    >
+      Submit
+    </button>
+
+    <p class="cursor-pointer">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, deserunt.
+    </p>
+    <br />
+
+    <!-- Resize -->
+
+    <!-- User Select -->
+    <div class="select-none">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, illo.
+    </div>
+    <div class="select-text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, illo.
+    </div>
+    <div class="select-all">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, illo.
+    </div>
+    <div class="select-auto">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, illo.
+    </div>
+    <br /><br />
+
+    <!-- Smooth Scroll Example -->
+    <p id="large-text">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia ipsum
+      voluptatum perspiciatis? Ab neque cum nostrum laborum, laudantium
+      repellendus sequi magnam voluptatum excepturi soluta beatae provident
+      facilis odit delectus maxime, enim quam, et nemo labore nihil aliquid
+      harum error odio culpa. Quam, molestiae adipisci voluptatum optio eum
+      corporis autem atque.
+    </p>
+  </body>
+</html>
+
+<!-- Cursor
+  cursor-auto	          cursor: auto;
+  cursor-default	      cursor: default;
+  cursor-pointer	      cursor: pointer;
+  cursor-wait	          cursor: wait;
+  cursor-text	          cursor: text;
+  cursor-move	          cursor: move;
+  cursor-help	          cursor: help;
+  cursor-not-allowed	  cursor: not-allowed;
+  cursor-none	          cursor: none;
+  cursor-context-menu	  cursor: context-menu;
+  cursor-progress	      cursor: progress;
+  cursor-cell	          cursor: cell;
+  cursor-crosshair	    cursor: crosshair;
+  cursor-vertical-text	cursor: vertical-text;
+  cursor-alias	        cursor: alias;
+  cursor-copy	          cursor: copy;
+  cursor-no-drop	      cursor: no-drop;
+  cursor-grab	          cursor: grab;
+  cursor-grabbing	      cursor: grabbing;
+  cursor-all-scroll	    cursor: all-scroll;
+  cursor-col-resize	    cursor: col-resize;
+  cursor-row-resize	    cursor: row-resize;
+  cursor-n-resize	      cursor: n-resize;
+  cursor-e-resize	      cursor: e-resize;
+  cursor-s-resize	      cursor: s-resize;
+  cursor-w-resize	      cursor: w-resize;
+  cursor-ne-resize	    cursor: ne-resize;
+  cursor-nw-resize	    cursor: nw-resize;
+  cursor-se-resize	    cursor: se-resize;
+  cursor-sw-resize	    cursor: sw-resize;
+  cursor-ew-resize	    cursor: ew-resize;
+  cursor-ns-resize	    cursor: ns-resize;
+  cursor-nesw-resize	  cursor: nesw-resize;
+  cursor-nwse-resize	  cursor: nwse-resize;
+  cursor-zoom-in	      cursor: zoom-in;
+  cursor-zoom-out	      cursor: zoom-out;
+-->
